@@ -40,8 +40,8 @@ public class GameStrategy {
 		for(int i = row,j = col; i < 8 && j >= 0; i++,j--) {
 			if (placedQueens[i][j]) return false; //Checking if there is any queen in upper left diagonal
 		}
-		
 		placedQueens[row][col] = true; //If Queen nowhere in any sides or diagonals, place the queen
+		numQueens++; // Incrementing the number of Queens placed
 		return true; 
 	}
 }
